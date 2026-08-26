@@ -1,0 +1,12 @@
+{
+  "_note": "MOCK DATA ONLY. No real UANs, Aadhaar, PAN, or bank details. All numbers below are fictional and follow EPFO's format loosely for realism. Login is demo-only: any user can sign in with their UAN + the fixed OTP 000000.",
+  "demoOtp": "000000",
+  "users": [
+    {"uan":"100234567890","name":"Ritika Sen","phoneMasked":"+91 9XXXXX2314","employerName":"Vantage Retail Pvt Ltd","activeClaimId":"CLM-1001","scenarioTag":"kyc_not_approved","note":"Primary demo path — walk this one in the video. Rejected on employer-side KYC approval, clean single-cause case."},
+    {"uan":"100234561122","name":"Abdul Kareem","phoneMasked":"+91 9XXXXX7788","employerName":"Formerly: Sunrise Logistics","activeClaimId":"CLM-1002","scenarioTag":"name_mismatch","note":"Self-fixable, but requires a real-world waiting period — good for showing the 'still open' tracker state."},
+    {"uan":"100234569934","name":"Priya Nair","phoneMasked":"+91 9XXXXX4410","employerName":"Formerly: BrightPath Tech","activeClaimId":"CLM-1003","scenarioTag":"bank_ifsc","note":"Self-fixable and resubmittable same day — use this one to demo the full resubmit-and-confirm loop."},
+    {"uan":"100234570045","name":"Suresh Kalra","phoneMasked":"+91 9XXXXX9021","employerName":"Formerly: Orion Manufacturing","activeClaimId":"CLM-1004","scenarioTag":"exit_date_not_updated","note":"Shows the branching logic: self-declare after 2 months vs. wait on employer."},
+    {"uan":"100234571188","name":"Meenal Joshi","phoneMasked":"+91 9XXXXX5567","employerName":"Formerly: Kestrel Analytics","activeClaimId":"CLM-1005","scenarioTag":"form15g_missing","note":"Withdrawal under 5 years service — shows a claim rejected for a reason the citizen was never warned about upfront."},
+    {"uan":"100234572299","name":"Farhan Ali","phoneMasked":"+91 9XXXXX3345","employerName":"Formerly: Two prior employers","activeClaimId":"CLM-1006","scenarioTag":"duplicate_uan","note":"The 'this genuinely takes 30 days and nobody tells you' case — good for the honesty/turnaround message in the UI."}
+  ]
+}
