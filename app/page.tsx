@@ -1,0 +1,3 @@
+"use client";
+import { useRouter } from "next/navigation";
+export default function Home(){const r=useRouter();return <main className="shell"><p className="eyebrow">EPFO CLAIM DECODER</p><h1>Understand what happened to your PF claim.</h1><p className="muted">Sign in with your UAN to see your demo claims.</p><form onSubmit={e=>{e.preventDefault();r.push('/dashboard?uan=100234569934')}}><label>UAN<input defaultValue="100234569934" inputMode="numeric"/></label><label>OTP<input defaultValue="000000" inputMode="numeric"/></label><button>Continue</button></form><p className="demo">Demo data — not connected to EPFO</p></main>}
